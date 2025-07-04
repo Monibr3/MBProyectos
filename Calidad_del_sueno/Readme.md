@@ -1,55 +1,77 @@
-💤 Predicción de la Calidad del Sueño
-Este proyecto es una aplicación desarrollada en Python que permite predecir la calidad del sueño de una persona en función de distintos factores relacionados con su estilo de vida y salud. Utiliza modelos de inteligencia artificial entrenados con datos reales para generar una predicción automática e intuitiva.
+# 💤 Predicción de la Calidad del Sueño
 
-🎯 Objetivo
-El objetivo principal es ofrecer una herramienta sencilla que ayude a los usuarios a conocer si su calidad de sueño es adecuada o deficiente, basándose en variables como:
+**Predicción del sueño** es una aplicación desarrollada en Python que permite estimar la **calidad del sueño** de una persona a partir de variables relacionadas con su estilo de vida, salud y hábitos diarios. Utiliza técnicas de inteligencia artificial para predecir si el descanso ha sido **bueno** o **malo**.
 
-Horas de sueño
+---
 
-Nivel de actividad física
+## 🎯 Objetivo
 
-Consumo de cafeína
+El objetivo principal de esta aplicación es proporcionar una herramienta intuitiva que ayude a los usuarios a:
 
-Nivel de estrés
+- Identificar patrones que afectan a su sueño
+- Prever la calidad de su descanso
+- Reflexionar sobre sus hábitos diarios
 
-Frecuencia cardíaca
+---
 
-Edad y género, entre otros
+## 🧾 Variables utilizadas
 
-🧠 Tecnología utilizada
-Python
+La predicción se basa en variables como:
 
-Pandas / Numpy (tratamiento de datos)
+- 🕒 **Horas de sueño**
+- ❤️ **Frecuencia cardíaca**
+- ☕ **Consumo de cafeína**
+- 🏃 **Nivel de actividad física**
+- 😰 **Nivel de estrés**
+- 🎂 **Edad**
+- ⚧ **Género**
 
-Scikit-learn (entrenamiento del modelo)
+---
 
-Pickle (para guardar y cargar el modelo)
+## 🧠 Tecnología utilizada
 
-Streamlit o Flask (para interfaz web, si corresponde)
+- `Python 3`
+- `pandas`, `numpy` – para manejo de datos
+- `scikit-learn` – para el entrenamiento del modelo
+- `pickle` – para guardar y cargar el modelo
+- `matplotlib`, `seaborn` – para visualización (en el notebook)
+- `Streamlit` o `Flask` – para la interfaz (según el despliegue final)
 
-Jupyter Notebook (para exploración y análisis)
+---
 
-⚙️ Funcionamiento
-Se carga un modelo previamente entrenado (modelo_sueno.pkl).
+## ⚙️ Funcionamiento
 
-El usuario introduce datos sobre su día a día a través de una interfaz simple.
+1. El usuario introduce datos personales en una interfaz sencilla.
+2. El modelo entrenado (`modelo_sueno.pkl`) procesa estos datos.
+3. Se devuelve una predicción:  
+   ✅ **Sueño de buena calidad**  
+   ❌ **Sueño de mala calidad**
 
-La aplicación procesa los datos y devuelve una predicción de calidad de sueño: "Buena" o "Mala".
+---
 
-📁 Estructura del proyecto
-bash
+## 📁 Estructura del proyecto
+
+📦 Calidad_del_sueno/
+│
+├── Calidad_del_sueno.ipynb # Notebook de análisis y entrenamiento
+├── app_sueno.py # Código principal de la app
+├── modelo_sueno.pkl # Modelo guardado (no subido a GitHub)
+├── app_sueno.spec # Archivo de configuración para empaquetado
+├── /Health and Sleep stadistics # Carpeta con el dataset CSV
+├── /build, /dist # Carpetas generadas por PyInstaller
+└── .gitignore # Archivos que no se suben al repo
+
+yaml
 Copiar
 Editar
-📁 Calidad_del_sueno/
-│
-├── Calidad_del_sueno.ipynb       # Análisis y entrenamiento del modelo
-├── app_sueno.py                  # Aplicación en Python (interfaz)
-├── modelo_sueno.pkl              # Modelo entrenado (ignorado en GitHub)
-├── .gitignore                    # Archivos que no se suben al repositorio
-├── /Health and Sleep stadistics # Dataset usado
-🚫 Notas
-El archivo del modelo (modelo_sueno.pkl) no está subido a GitHub por superar el límite de tamaño. Puedes descargarlo desde aquí (añade el enlace si lo subes a Drive u otro sitio).
 
+---
+
+## 🚫 Nota sobre el modelo
+
+El archivo del modelo `modelo_sueno.pkl` **no se encuentra en este repositorio** porque supera el límite de tamaño de GitHub.  
+Puedes descargarlo desde este enlace externo:  
+🔗 [Enlace al modelo en Google Drive (pendiente)](#)
 El proyecto está pensado como una herramienta educativa y no sustituye a una evaluación médica.
 
 🙋‍♀️ Autora
