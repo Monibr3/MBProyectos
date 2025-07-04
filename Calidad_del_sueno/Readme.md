@@ -35,7 +35,7 @@ La predicción se basa en variables como:
 - `scikit-learn` – para el entrenamiento del modelo
 - `pickle` – para guardar y cargar el modelo
 - `matplotlib`, `seaborn` – para visualización (en el notebook)
-- `Streamlit` o `Flask` – para la interfaz (según el despliegue final)
+- `Streamlit`(despliegue final) 
 
 ---
 
@@ -59,7 +59,7 @@ La predicción se basa en variables como:
 ├── app_sueno.spec # Archivo de configuración para empaquetado
 ├── /Health and Sleep stadistics # Carpeta con el dataset CSV
 ├── /build, /dist # Carpetas generadas por PyInstaller
-└── .gitignore # Archivos que no se suben al repo
+
 
 yaml
 Copiar
@@ -77,6 +77,3 @@ El proyecto está pensado como una herramienta educativa y no sustituye a una ev
 🙋‍♀️ Autora
 Este proyecto ha sido desarrollado por Monibr3, como parte de su formación en inteligencia artificial aplicada con Python.
 
-¿Quieres que te lo prepare ya en archivo .md para que lo subas directamente? También te puedo añadir una sección con instrucciones para ejecutarlo si usas Streamlit o Flask.
-
-**https://drive.google.com/drive/folders/1TheXFLxmMAEX2EYKFfS9nM_hlYud5OTt?usp=drive_link**
